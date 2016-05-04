@@ -1,0 +1,79 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.christiandegenova.quietnight_1.HotSpotDetailFragment"
+    android:background="@color/DarkBlue">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="192dp"
+                android:layout_height="217dp"
+                android:layout_gravity="center_horizontal"
+                android:id="@+id/hotSpotPhoto" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Hot Spot"
+                android:textSize="30dp"
+                android:layout_gravity="center_horizontal"
+                android:id="@+id/hotSpotName"
+                android:textStyle="bold"
+                android:textColor="@color/Yellow"
+                android:layout_marginBottom="20dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="36dp"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Address"
+                android:layout_gravity="center_horizontal"
+                android:id="@+id/hotSpotAddress"
+                android:textColor="@color/Yellow"
+                android:textStyle="bold"
+                android:layout_marginBottom="20dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="36dp"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Link to the Website!"
+                android:id="@+id/hotSpotWebsite"
+                android:textStyle="bold"
+                android:textColor="@color/Yellow"
+                android:layout_marginBottom="20dp"
+                android:autoLink="web"
+                android:linksClickable="true"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Hours"
+                android:id="@+id/hotSpotHours"
+                android:textStyle="bold"
+                android:textColor="@color/Yellow"
+                android:layout_marginBottom="25dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Description"
+                android:textStyle="bold"
+                android:id="@+id/hotSpotDescription"
+                android:textColor="@color/Yellow"/>
+
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>

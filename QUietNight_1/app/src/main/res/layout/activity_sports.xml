@@ -1,0 +1,81 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.christiandegenova.quietnight_1.SportsFragment"
+    android:background="@color/DarkBlue">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Sports"
+        android:id="@+id/sports_text"
+        android:textStyle="bold"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textSize="60dp"
+        android:textColor="@color/FadedBlue"
+        android:layout_gravity="center_horizontal|top" />
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="75dp"
+        android:text="Men's Hockey"
+        android:textStyle="bold"
+        android:id="@+id/mHock"
+        android:textColor="@color/DarkBlue"
+        android:background="@color/Yellow"
+        android:layout_above="@+id/wHock"
+        android:layout_marginBottom="30dp"
+        android:layout_alignStart="@+id/wHock"
+        android:onClick="onClickMHOCK"/>
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="75dp"
+        android:text="Women's Hockey"
+        android:id="@+id/wHock"
+        android:textStyle="bold"
+        android:textColor="@color/DarkBlue"
+        android:layout_above="@+id/mBas"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/button_border"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:onClick="onClickWHOCK" />
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="75dp"
+        android:text="Men's Basketball"
+        android:id="@+id/mBas"
+        android:textColor="@color/DarkBlue"
+        android:textStyle="bold"
+        android:background="@color/Yellow"
+        android:layout_above="@+id/wBas"
+        android:layout_alignStart="@+id/wHock"
+        android:layout_marginBottom="30dp"
+        android:onClick="onClickMBB" />
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="75dp"
+        android:text="Women's Basketball"
+        android:id="@+id/wBas"
+        android:textColor="@color/DarkBlue"
+        android:textStyle="bold"
+        android:background="@drawable/button_border"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="30dp"
+        android:layout_alignStart="@+id/wHock"
+        android:onClick="onClickWBB" />
+
+    <FrameLayout
+        android:id="@+id/sport_frag"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"></FrameLayout>
+
+</RelativeLayout>
